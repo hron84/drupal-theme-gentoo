@@ -16,7 +16,7 @@ Compatibility
 
 This repository has two separated branch, one for Drupal 6.x and one for Drupal 7.x.
 Please be careful, because these two branch are not cross-compatible. So, with simple
-words: you cannot use drupal-7.x branch with Drupal 6.x, and same for drupal-7.x branch
+words: you cannot use drupal-7.x branch with Drupal 6.x, and same for drupal-6.x branch
 
 Development
 -----------
