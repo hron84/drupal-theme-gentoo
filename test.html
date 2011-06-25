@@ -1,0 +1,361 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="hu-HU">
+
+    <head profile="http://gmpg.org/xfn/11">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>új nap &#8211; új vulnerability (CVE-2010-3847, CVE-2010-3856) &laquo; Magyar Gentoo közösségi oldal</title>
+        <style type="text/css" media="screen">
+            @import url( http://gentoolinux.hu/wp-content/themes/gentoohu/style.css );
+            #header {
+                background-image: url('http://gentoolinux.hu/wp-content/themes/gentoohu/images/header.png');
+                background-repeat: no-repeat;
+            }
+
+            #footer {
+                background-image: url('http://gentoolinux.hu/wp-content/themes/gentoohu/images/footer.png');
+                background-repeat: repeat-y;
+            }
+            .nodehead, .commenthead {
+                background-image: url('http://gentoolinux.hu/wp-content/themes/gentoohu/images/nheader.png');
+                background-repeat: repeat-y;
+            }
+
+            .box h2.boxhead {
+                background-image: url('http://gentoolinux.hu/wp-content/themes/gentoohu/images/bheader.png');
+                background-repeat: repeat-y;
+            }
+        </style>
+        <script type="text/javascript" src="http://gentoolinux.hu/wp-content/themes/gentoohu/scripts/dateprinter.js"></script>
+        <link rel="shortcut icon" href="http://gentoolinux.hu/wp-content/themes/gentoohu/favicon.ico" />
+
+        <link rel="pingback" href="http://gentoolinux.hu/xmlrpc.php" />
+        <link rel='archives' title='2010. november' href='http://gentoolinux.hu/2010/11/' />
+        <link rel='archives' title='2010. október' href='http://gentoolinux.hu/2010/10/' />
+        <link rel='archives' title='2010. szeptember' href='http://gentoolinux.hu/2010/09/' />
+        <link rel='archives' title='2010. augusztus' href='http://gentoolinux.hu/2010/08/' />
+        <link rel='archives' title='2010. július' href='http://gentoolinux.hu/2010/07/' />
+        <link rel='archives' title='2010. június' href='http://gentoolinux.hu/2010/06/' />
+        <link rel='archives' title='2010. május' href='http://gentoolinux.hu/2010/05/' />
+        <link rel='archives' title='2010. április' href='http://gentoolinux.hu/2010/04/' />
+
+        <link rel='archives' title='2010. március' href='http://gentoolinux.hu/2010/03/' />
+        <link rel='archives' title='2010. február' href='http://gentoolinux.hu/2010/02/' />
+        <link rel="alternate" type="application/rss+xml" title="Magyar Gentoo közösségi oldal &raquo; hírcsatorna" href="http://gentoolinux.hu/feed/" />
+        <link rel="alternate" type="application/rss+xml" title="Magyar Gentoo közösségi oldal &raquo; hozzászólás hírcsatorna" href="http://gentoolinux.hu/comments/feed/" />
+        <link rel="alternate" type="application/rss+xml" title="Magyar Gentoo közösségi oldal &raquo; új nap &#8211; új vulnerability (CVE-2010-3847, CVE-2010-3856) hozzászólás hírcsatorna" href="http://gentoolinux.hu/2010/10/uj-nap-uj-vulnerability-cve-2010-3847-cve-2010-3856/feed/" />
+        <script type='text/javascript' src='http://gentoolinux.hu/wp-includes/js/jquery/jquery.js?ver=1.3.2'></script>
+        <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://gentoolinux.hu/xmlrpc.php?rsd" />
+        <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://gentoolinux.hu/wp-includes/wlwmanifest.xml" />
+        <link rel='index' title='Magyar Gentoo közösségi oldal' href='http://gentoolinux.hu' />
+        <link rel='start' title='Az első bejegyzés' href='http://gentoolinux.hu/2010/02/az-elso-bejegyzes/' />
+        <link rel='prev' title='Mindent frissít az emerge -avuDN world? &#8211; Nem.' href='http://gentoolinux.hu/2010/10/mindent-frissit-az-emerge-avudn-world-nem/' />
+        <link rel='next' title='libmysqld és az Amarok' href='http://gentoolinux.hu/2010/11/libmysqld-es-az-amarok/' />
+        <meta name="generator" content="WordPress 2.9.2" />
+
+        <link rel='canonical' href='http://gentoolinux.hu/2010/10/uj-nap-uj-vulnerability-cve-2010-3847-cve-2010-3856/' />
+
+    </head>
+    <body class="single postid-191">
+        <div id="wrapper">
+
+            <!-- Begin Header -->
+            <div id="header">
+                <a href="http://gentoolinux.hu"><h1>Magyar Gentoo közösségi oldal</h1></a>
+                <p style="font-size:16pt; font-family: Georgia, 'Times New Roman', Times, serif;">ebuild &#8211; egy sima, egy fordított&#8230;</p>
+
+            </div>
+            <!-- End Header -->
+            <!-- Begin Left Column -->
+            <div id="leftcolumn">
+                <div id="text-3" class="box widget_text"><h2 class="boxhead">Név megadása</h2><div class="boxbody">			<div class="textwidget"><p><strong style="font-size: 14px">Fontos!!!!!!!</strong></p>
+                            <p>Kérek minden meglevő, és újonnan regisztráló embert, hogy állítson be valamit a név mezőnél az adatlapján. Ez lehet akár a felhasználói név is, de valami legyen ott. A botok elleni harc elkezdődött.</p>
+                        </div>
+                    </div></div><div id="linkcat-10" class="box widget_links"><h2 class="boxhead">Hasznos Linkek</h2><div class="boxbody">
+
+                        <ul class='xoxo blogroll'>
+                            <li><a href="https://bugs.gentoo.org/">Gentoo Bugzilla</a></li>
+                            <li><a href="http://en.gentoo-wiki.com/wiki/Main_Page">Gentoo Wiki</a></li>
+                            <li><a href="http://www.gentoo.org">Gentoo.org</a></li>
+                            <li><a href="http://packages.gentoo.org/">Hivatalos Gentoo csomagadatbázis</a></li>
+                            <li><a href="http://gentoo-portage.com/">Portage-turkáló</a></li>
+                            <li><a href="http://znurt.org/" title="pgo átirat egy lelkes gentoo devtől" target="_blank">Znurt</a></li>
+
+                        </ul>
+
+                    </div></div>
+                <div class="box">
+                    <h2 class="boxhead">Bejelentkezés</h2>
+                    <div class="boxbody">
+                        <!-- To avoid permission problems, we log in directly into bbPress -->
+                        <form method="post" action="http://gentoolinux.hu/forum/bb-login.php" class="login-form">
+                            <p>
+                                <label for="user_login">Felhasználónév</label>:<br/>
+
+                                <input type="text" name="user_login" id="user_login" value=""/>
+                            </p>
+                            <p>
+                                <label for="password">Jelszó</label>:<br/>
+                                <input type="password" name="password" id="password" />
+                            </p>
+                            <p>
+                                <label for="remember">Emlékezzen rám!</label>
+
+                                <input name="remember" type="checkbox" id="remember" value="1" />
+                            </p>
+                            <p class="submit">
+                                <input type="submit" value="Belépés"/>
+                            </p>
+                        </form>
+
+                        <p><a href="http://gentoolinux.hu/wp-login.php?action=register">Regisztráció</a></p>
+
+                    </div>
+
+                </div>
+
+                <div class="box">
+                    <h2 class="boxhead">Elfelejtett jelszó</h2>
+                    <div class="boxbody">
+
+                        <form name="lostpasswordform" id="lostpasswordform" action="http://gentoolinux.hu/wp-login.php?action=lostpassword" method="post" class="login-form">
+                            <p>
+                                <label>Felhasználónév, vagy E-mail:<br />
+                                    <input type="text" name="user_login" id="user_login" class="input" value="" size="20" tabindex="10" /></label>
+
+                            </p>
+                            <p class="submit"><input type="submit" name="wp-submit" id="wp-submit" class="button-primary" value="Új jelszó kérése" tabindex="100" /></p>
+                        </form>
+                    </div>
+
+                </div>
+
+                <div id="useronline-3" class="box widget_useronline"><h2 class="boxhead">Online felhasználók</h2><div class="boxbody"><div id="useronline-browsing-site">Users: <strong>1 Guest</strong></div></div></div><div id="rss-3" class="box widget_rss"><h2 class="boxhead"><a class='rsswidget' href='http://www.gentoo.org/rdf/en/glsa-index.rdf' title='Olvasás RSS hírcsatornán keresztül'><img style='background:orange;color:white;border:none;' width='14' height='14' src='http://gentoolinux.hu/wp-includes/images/rss.png' alt='RSS' /></a> <a class='rsswidget' href='http://www.gentoo.org/security/en/glsa/index.xml' title='This index is automatically generated from XML source. Please contact the
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  Gentoo Linux Security Team (security@gentoo.org) for related inquiries.'>GLSA</a></h2><div class="boxbody"><ul><li><a class='rsswidget' href='http://security.gentoo.org/glsa/glsa-201010-01.xml' title='Libpng: Multiple vulnerabilities [&hellip;]'>GLSA 201010-01 (Normal): libpng</a></li><li><a class='rsswidget' href='http://security.gentoo.org/glsa/glsa-201009-09.xml' title='fence: Multiple symlink vulnerabilites [&hellip;]'>GLSA 201009-09 (Normal): fence</a></li><li><a class='rsswidget' href='http://security.gentoo.org/glsa/glsa-201009-08.xml' title='python-updater: Untrusted search path [&hellip;]'>GLSA 201009-08 (High): python-updater</a></li><li><a class='rsswidget' href='http://security.gentoo.org/glsa/glsa-201009-07.xml' title='libxml2: Denial of Service [&hellip;]'>GLSA 201009-07 (Normal): libxml2</a></li><li><a class='rsswidget' href='http://security.gentoo.org/glsa/glsa-201009-06.xml' title='Clam AntiVirus: Multiple vulnerabilities [&hellip;]'>GLSA 201009-06 (Normal): clamav</a></li></ul></div></div><div id="rss-4" class="box widget_rss"><h2 class="boxhead"><a class='rsswidget' href='http://www-128.ibm.com/developerworks/views/linux/rss/libraryview.jsp' title='Olvasás RSS hírcsatornán keresztül'><img style='background:orange;color:white;border:none;' width='14' height='14' src='http://gentoolinux.hu/wp-includes/images/rss.png' alt='RSS' /></a> <a class='rsswidget' href='http://www.ibm.com/developerworks/' title='The latest content from IBM developerWorks'>IBM developerworks</a></h2><div class="boxbody"><ul><li><a class='rsswidget' href='http://www.ibm.com/developerworks/cloud/library/cl-automatevm/index.html?ca=drs-' title='In a virtual data center the deployment and the dismissal of complex appliances require that multiple configuration steps be executed. Reconfiguration requirements include establishing and removing communication between different components of the same product running in different virtual machines (VMs) as well as different products running in different VMs. [&hellip;]'>Automate virtual machine discovery and self-connectivity</a> <span class="rss-date">2010. november 1.  hétfő</span></li><li><a class='rsswidget' href='http://www.ibm.com/developerworks/linux/library/l-virtual-networking/index.html?ca=drs-' title='With the explosive growth of platform virtualization, it&apos;s not surprising that other parts of the enterprise ecosystem are being virtualized, as well. One of the more recent areas is virtual networking. Early implementations of platform virtualization created virtual NICs, but today, larger portions of the network are being virtualized, such as switches [&hellip;]'>Virtual networking in Linux</a> <span class="rss-date">2010. október 27.  szerda</span></li><li><a class='rsswidget' href='http://www.ibm.com/developerworks/linux/library/l-migrate2cloud-4/index.html?ca=drs-' title='Up to now, you have moved your application to the cloud and can enable and disable resources automatically in response to demand. In this article, the fourth in a series on migrating a Linux application to the Amazon cloud, learn how to keep this changing environment under control so that it supports your application and business. [&hellip;]'>Migrate your Linux application to the Amazon cloud, Part
+                                    4: Conquering administrative challenges</a> <span class="rss-date">2010. október 27.  szerda</span></li><li><a class='rsswidget' href='http://www.ibm.com/developerworks/linux/library/l-lpic1-v3-map/index.html?ca=drs-' title='Use this roadmap to find IBM developerWorks articles that will help you learn and review basic Linux tasks. And if you&apos;re also pursuing professional certification as a Linux system administrator, these articles can help you study for the Linux Professional Institute Certification (LPIC) exam 101 and exam 102. This roadmap is organized according to the 4 [&hellip;]'>Learn Linux, 101: A roadmap for LPIC-1</a> <span class="rss-date">2010. október 22.  péntek</span></li><li><a class='rsswidget' href='http://www.ibm.com/developerworks/linux/library/l-port-perl/index.html?ca=drs-' title='Although the Perl language is portable among platforms, most of the scripts used for system administration leverage platform-specific resources. And scripts meant for Solaris might use Solaris-specific pathnames and system commands that may have not equivalents on Linux. This article gives you a roadmap for &quot;code remediation&quot; to help you port a Per [&hellip;]'>Port Perl scripts from Solaris to Linux</a> <span class="rss-date">2010. október 20.  szerda</span></li><li><a class='rsswidget' href='http://www.ibm.com/developerworks/linux/library/l-lpic1-v3-104-3/index.html?ca=drs-' title='Learn to mount your Linux filesystems; configure and use removable USB, IEE 1394, or other devices; and properly access floppy disks, CDs, and DVDs. You can use the material in this article to study for the LPI 101 exam for Linux system administrator certification, or just to learn about accessing Linux filesystems. [&hellip;]'>Learn Linux, 101: Control mounting and unmounting of filesystems</a> <span class="rss-date">2010. október 20.  szerda</span></li><li><a class='rsswidget' href='http://www.ibm.com/developerworks/linux/library/l-migrate2cloud-3/index.html?ca=drs-' title='If you&apos;ve followed the series to this point, our sample Linux application has been migrated to the cloud, and we&apos;ve configured some basic reliability features. In this article, the third in the series on migrating an application to the Amazon cloud, it&apos;s time to take advantage of the dynamic nature of the cloud by growing and shrinking the inf [&hellip;]'>Migrate your Linux application to the Amazon cloud, Part
+                                    3: Building scalability</a> <span class="rss-date">2010. október 6.  szerda</span></li><li><a class='rsswidget' href='http://www.ibm.com/developerworks/linux/library/l-kernel-logging-apis/index.html?ca=drs-' title='In kernel development, we useprintk for logging without much thought. But have you considered the process and underlying implementation of kernel logging? Explore the entire process of kernel logging, from printk to insertion into the user space log file. [&hellip;]'>Kernel logging: APIs and implementation</a> <span class="rss-date">2010. szeptember 30.  csütörtök</span></li><li><a class='rsswidget' href='http://www.ibm.com/developerworks/linux/library/l-inotify/index.html?ca=drs-' title='Use inotify when you need efficient, fine-grained, asynchronous monitoring of Linux file system events. Use it for user-space monitoring for security, performance, or other purposes. (On 10 September 2010, the downloadable sample code for this article was refreshed to correct a typo. - Ed.) [&hellip;]'>Monitor Linux file system events with inotify</a> <span class="rss-date">2010. szeptember 10.  péntek</span></li><li><a class='rsswidget' href='http://www.ibm.com/developerworks/linux/library/l-resizing-partitions-2/index.html?ca=drs-' title='Linux systems are often installed on multiple partitions, each of which has a fixed size. As your needs change, though, it is often necessary to resize partitions to suit your changing needs. Several tools exist to do this in Linux, but there are a number of potential pitfalls and restrictions that can make the task more difficult than it might at first seem [&hellip;]'>Resizing Linux partitions, Part 2: Advanced resizing</a> <span class="rss-date">2010. szeptember 1.  szerda</span></li></ul></div></div></div>
+
+            <!-- End Left Column -->            <!-- Begin Content Column -->
+            <div id="content">
+                <div id="navmenu">
+                    <ul>
+                        <li><a href="http://gentoolinux.hu">Főoldal</a></li>
+                        <li><a href="http://gentoolinux.hu/forum">Fórumok</a></li>
+                        <li><a href="http://gentoolinux.hu/szabalyok/">Szabályok</a></li>
+
+                        <li><a href="http://gentoolinux.hu/az-oldalrol/">Magunkról</a></li>
+                    </ul>
+                </div>
+
+
+
+                <div class="node">
+                    <div class="nodehead autoheight">
+                        <script type="text/javascript">printDateDiv(2010, 10, 30);</script>
+                        <h2><a href="http://gentoolinux.hu/2010/10/uj-nap-uj-vulnerability-cve-2010-3847-cve-2010-3856/">új nap &#8211; új vulnerability (CVE-2010-3847, CVE-2010-3856)</a></h2>
+
+                        <br class="clear" />
+                    </div>
+                    <div class="nodebody">
+                        <p>Dióhéjban. Glibc hibáról van szó, local privilege escalation sebezhetségről van szó, exploit közkézen elérhető.<br />
+                            A javítás portolva lett a jelenlegi stabil glibc ágba. A fixet a glibc-2.11.2-r2 tartalmazza.</p>
+                        <p>Hogyan teszteld, hogy érintett vagy-e?<br />
+                            1) <code>find / -perm -4004 -type f -user root | xargs ls -l</code><br />
+
+                            2) <a href="http://blog.funtoo.org/2010/10/security-update-glibc-2101-r2.html">funtoo blogbejegyzés</a></p>
+                        <p>Bővebb infók: https://bugs.gentoo.org/341755</p>
+                    </div>
+
+                    <div class="nodefoot">
+                        <p>
+                            Kategória: <a href="http://gentoolinux.hu/category/news/" title="Összes bejegyzés a(z) Hír kategóriában" rel="category tag">Hír</a>, <a href="http://gentoolinux.hu/category/blogpost-forditas/" title="Összes bejegyzés a(z) blogpost fordítás kategóriában" rel="category tag">blogpost fordítás</a>                                </p>
+
+                        <p>
+                            <strong>Beküldte:</strong> <a href="http://gentoolinux.hu/author/balage/" title="balage bejegyzései">balage</a> |
+                            <strong>Idő:</strong> <span style="font-weight: normal"> 17:56</span> |
+                            <a href="http://gentoolinux.hu/2010/10/uj-nap-uj-vulnerability-cve-2010-3847-cve-2010-3856/#comments" title="új nap &#8211; új vulnerability (CVE-2010-3847, CVE-2010-3856): hozzászólás">6 hozzászólás</a>
+                            | <a href="http://gentoolinux.hu/2010/10/uj-nap-uj-vulnerability-cve-2010-3847-cve-2010-3856/trackback/" rel="trackback">Trackback</a>
+
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- dirty hack to jumper id -->
+                <span id="comments">&nbsp;</span>
+                <div class="comment byuser comment-author-muczy even thread-even depth-1" id="comment-114">
+                    <div class="commenthead">
+                        <img alt='' src='http://www.gravatar.com/avatar/ca23cde808f5f245b991b713ff056398?s=32&amp;d=http%3A%2F%2Fwww.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />        <p class="commentuser"><a href='http://muczy.hu' rel='external nofollow' class='url'>muczy</a></p>
+
+                        <p class="commentdate">2010. október 30.  szombat</p>
+                        <br class="clear" />
+                    </div>
+
+                    <div class="commentbody">
+                        <p>Ezzel csak az a bajom, hogy Debian-ba és Ubuntu-ba már Október 22-én (8 nappal ezelőtt) megjött a frissítés. Drobbins is késett 2 napot a Funtoo-nál, de az mégse 8 nap&#8230;
+                            <div class="yarr"><span onclick='yus_replyTo("http://gentoolinux.hu/2010/10/uj-nap-uj-vulnerability-cve-2010-3847-cve-2010-3856/comment-page-1/#comment-114", "muczy")' title="Válasz ehhez a hozzászóláshoz"><img alt="Válasz" src="http://gentoolinux.hu/wp-content/plugins/reply-to/reply.png" />Válasz</span></div>
+                    </div>
+
+                    <div class="commentfoot">
+                        <p>  |
+                            <a href="http://gentoolinux.hu/2010/10/uj-nap-uj-vulnerability-cve-2010-3847-cve-2010-3856/#comment-114">Permalink</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="comment byuser comment-author-balage bypostauthor odd alt thread-odd thread-alt depth-1" id="comment-115">
+                    <div class="commenthead">
+                        <img alt='' src='http://www.gravatar.com/avatar/76799ff540fd05df0337015d142fc350?s=32&amp;d=http%3A%2F%2Fwww.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />        <p class="commentuser"><a href='http://kac.duf.hu/~balage' rel='external nofollow' class='url'>balage</a></p>
+
+                        <p class="commentdate">2010. október 30.  szombat</p>
+                        <br class="clear" />
+                    </div>
+
+                    <div class="commentbody">
+                        <p>@<a href="http://gentoolinux.hu/2010/10/uj-nap-uj-vulnerability-cve-2010-3847-cve-2010-3856/comment-page-1/#comment-114" rel="nofollow">muczy</a>: </p>
+                        <p>Akkor használj debiant <img src='http://gentoolinux.hu/wp-includes/images/smilies/icon_wink.gif' alt=';)' class='wp-smiley' /><br />
+
+                            Illetve ha az említett gentoo bugot elolvasod akkor láthatod, hogy a gentoo nem feltétlen érintett az alapértelmezett FEATURES=sfperms miatt. Amiről speciel eddig nem is tudtam.
+                            <div class="yarr"><span onclick='yus_replyTo("http://gentoolinux.hu/2010/10/uj-nap-uj-vulnerability-cve-2010-3847-cve-2010-3856/comment-page-1/#comment-115", "balage")' title="Válasz ehhez a hozzászóláshoz"><img alt="Válasz" src="http://gentoolinux.hu/wp-content/plugins/reply-to/reply.png" />Válasz</span></div>
+                    </div>
+                    <div class="commentfoot">
+                        <p>  |
+                            <a href="http://gentoolinux.hu/2010/10/uj-nap-uj-vulnerability-cve-2010-3847-cve-2010-3856/#comment-115">Permalink</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="comment byuser comment-author-muczy even thread-even depth-1" id="comment-116">
+                    <div class="commenthead">
+                        <img alt='' src='http://www.gravatar.com/avatar/ca23cde808f5f245b991b713ff056398?s=32&amp;d=http%3A%2F%2Fwww.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />
+                        <p class="commentuser"><a href='http://muczy.hu' rel='external nofollow' class='url'>muczy</a></p>
+                        <p class="commentdate">2010. október 30.  szombat</p>
+                        <br class="clear" />
+                    </div>
+
+                    <div class="commentbody">
+
+                        <p>Hát nálam a FEATURES default beállításon van, és a mai update-ig érintett volt a rendszerem (a Funtoo-s blogbejegyzésben van egy parancs).
+                            <div class="yarr"><span onclick='yus_replyTo("http://gentoolinux.hu/2010/10/uj-nap-uj-vulnerability-cve-2010-3847-cve-2010-3856/comment-page-1/#comment-116", "muczy")' title="Válasz ehhez a hozzászóláshoz"><img alt="Válasz" src="http://gentoolinux.hu/wp-content/plugins/reply-to/reply.png" />Válasz</span></div>
+                    </div>
+                    <div class="commentfoot">
+                        <p>  |
+                            <a href="http://gentoolinux.hu/2010/10/uj-nap-uj-vulnerability-cve-2010-3847-cve-2010-3856/#comment-116">Permalink</a>
+                        </p>
+                    </div>
+
+                </div>
+                <div class="comment byuser comment-author-balage bypostauthor odd alt thread-odd thread-alt depth-1" id="comment-117">
+                    <div class="commenthead">
+                        <img alt='' src='http://www.gravatar.com/avatar/76799ff540fd05df0337015d142fc350?s=32&amp;d=http%3A%2F%2Fwww.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />        <p class="commentuser"><a href='http://kac.duf.hu/~balage' rel='external nofollow' class='url'>balage</a></p>
+                        <p class="commentdate">2010. október 30.  szombat</p>
+                        <br class="clear" />
+                    </div>
+
+                    <div class="commentbody">
+                        <p>@<a href="http://gentoolinux.hu/2010/10/uj-nap-uj-vulnerability-cve-2010-3847-cve-2010-3856/comment-page-1/#comment-115" rel="nofollow">balage</a>: </p>
+                        <p>idézem magam. &#8220;nem feltétlen érintett&#8221;. Nah a gentoosook ezen elvitatkoztak 5 napig, azért csak most kaptátok meg a fixet.
+                            <div class="yarr"><span onclick='yus_replyTo("http://gentoolinux.hu/2010/10/uj-nap-uj-vulnerability-cve-2010-3847-cve-2010-3856/comment-page-1/#comment-117", "balage")' title="Válasz ehhez a hozzászóláshoz"><img alt="Válasz" src="http://gentoolinux.hu/wp-content/plugins/reply-to/reply.png" />Válasz</span></div>
+                    </div>
+                    <div class="commentfoot">
+                        <p>  |
+                            <a href="http://gentoolinux.hu/2010/10/uj-nap-uj-vulnerability-cve-2010-3847-cve-2010-3856/#comment-117">Permalink</a>
+
+                        </p>
+                    </div>
+                </div>
+                <div class="comment byuser comment-author-muczy even thread-even depth-1" id="comment-118">
+                    <div class="commenthead">
+                        <img alt='' src='http://www.gravatar.com/avatar/ca23cde808f5f245b991b713ff056398?s=32&amp;d=http%3A%2F%2Fwww.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />        <p class="commentuser"><a href='http://muczy.hu' rel='external nofollow' class='url'>muczy</a></p>
+                        <p class="commentdate">2010. október 30.  szombat</p>
+                        <br class="clear" />
+
+                    </div>
+
+                    <div class="commentbody">
+                        <p>Ah, nem olvastam el figyelmesen amit írtál, bocsi.<br />
+                            Mindazonáltal, szerintem siethettek volna jobban is. Egy egy felhasználós desktop gépnél nem jelentett ez akkora problémát, de egy szervernél már annál inkább.
+                            <div class="yarr"><span onclick='yus_replyTo("http://gentoolinux.hu/2010/10/uj-nap-uj-vulnerability-cve-2010-3847-cve-2010-3856/comment-page-1/#comment-118", "muczy")' title="Válasz ehhez a hozzászóláshoz"><img alt="Válasz" src="http://gentoolinux.hu/wp-content/plugins/reply-to/reply.png" />Válasz</span></div>
+                    </div>
+                    <div class="commentfoot">
+                        <p>  |
+                            <a href="http://gentoolinux.hu/2010/10/uj-nap-uj-vulnerability-cve-2010-3847-cve-2010-3856/#comment-118">Permalink</a>
+
+                        </p>
+                    </div>
+                </div>
+                <div class="comment byuser comment-author-balage bypostauthor odd alt thread-odd thread-alt depth-1" id="comment-119">
+                    <div class="commenthead">
+                        <img alt='' src='http://www.gravatar.com/avatar/76799ff540fd05df0337015d142fc350?s=32&amp;d=http%3A%2F%2Fwww.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D32&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' />        <p class="commentuser"><a href='http://kac.duf.hu/~balage' rel='external nofollow' class='url'>balage</a></p>
+                        <p class="commentdate">2010. október 30.  szombat</p>
+                        <br class="clear" />
+
+                    </div>
+
+                    <div class="commentbody">
+                        <p>@<a href="http://gentoolinux.hu/2010/10/uj-nap-uj-vulnerability-cve-2010-3847-cve-2010-3856/comment-page-1/#comment-118" rel="nofollow">muczy</a>: </p>
+                        <p>Ezzel teljesen egyetértek.
+                            <div class="yarr"><span onclick='yus_replyTo("http://gentoolinux.hu/2010/10/uj-nap-uj-vulnerability-cve-2010-3847-cve-2010-3856/comment-page-1/#comment-119", "balage")' title="Válasz ehhez a hozzászóláshoz"><img alt="Válasz" src="http://gentoolinux.hu/wp-content/plugins/reply-to/reply.png" />Válasz</span></div>
+                    </div>
+                    <div class="commentfoot">
+
+                        <p>  |
+                            <a href="http://gentoolinux.hu/2010/10/uj-nap-uj-vulnerability-cve-2010-3847-cve-2010-3856/#comment-119">Permalink</a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- direct copy from classic theme! -->
+
+                <div id="commentform">
+                    <p>Sajnálom, de a hozzászólásra válaszoláshoz bejelentkezés szükséges.</p>
+
+                </div>
+
+
+            </div>
+            <!-- End Content -->
+            <!-- Begin Right Column -->
+            <div id="rightcolumn">
+                <div class="box">
+                    <h2 class="boxhead">Legutóbbi bejegyzések</h2>
+                    <div class="boxbody">
+
+                        <ul>
+                            <li><a href="http://gentoolinux.hu/2010/11/libmysqld-es-az-amarok/" title="libmysqld és az Amarok">libmysqld és az Amarok</a></li>
+                            <li><a href="http://gentoolinux.hu/2010/10/uj-nap-uj-vulnerability-cve-2010-3847-cve-2010-3856/" title="új nap &#8211; új vulnerability (CVE-2010-3847, CVE-2010-3856)">új nap &#8211; új...</a></li>
+                            <li><a href="http://gentoolinux.hu/2010/10/mindent-frissit-az-emerge-avudn-world-nem/" title="Mindent frissít az emerge -avuDN world? &#8211; Nem.">Mindent frissít az...</a></li>
+                            <li><a href="http://gentoolinux.hu/2010/10/cve-2010-3904-javitas-miatt-mindenkinek-ajanlott-frissiteni-a-gentoo-sources-csomagot/" title="CVE-2010-3904 javítás miatt mindenkinek ajánlott frissíteni a gentoo-sources csomagot!">CVE-2010-3904 javítás...</a></li>
+                            <li><a href="http://gentoolinux.hu/2010/09/cve-2010-3301-javitva-a-gentoo-sources-csomagban/" title="CVE-2010-3301 javítva a gentoo-sources csomagban!">CVE-2010-3301 javítva a...</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="box">
+                    <h2 class="boxhead">Legutóbbi hozzászólások</h2>
+                    <div class="boxbody">
+                        <ul>
+                            <li class="recentcomments">balage on<br /><a href="http://gentoolinux.hu/2010/10/uj-nap-uj-vulnerability-cve-2010-3847-cve-2010-3856/comment-page-1/#comment-119">új nap &#8211; új...</a></li><li class="recentcomments">muczy on<br /><a href="http://gentoolinux.hu/2010/10/uj-nap-uj-vulnerability-cve-2010-3847-cve-2010-3856/comment-page-1/#comment-118">új nap &#8211; új...</a></li><li class="recentcomments">balage on<br /><a href="http://gentoolinux.hu/2010/10/uj-nap-uj-vulnerability-cve-2010-3847-cve-2010-3856/comment-page-1/#comment-117">új nap &#8211; új...</a></li><li class="recentcomments">muczy on<br /><a href="http://gentoolinux.hu/2010/10/uj-nap-uj-vulnerability-cve-2010-3847-cve-2010-3856/comment-page-1/#comment-116">új nap &#8211; új...</a></li><li class="recentcomments">balage on<br /><a href="http://gentoolinux.hu/2010/10/uj-nap-uj-vulnerability-cve-2010-3847-cve-2010-3856/comment-page-1/#comment-115">új nap &#8211; új...</a></li>        </ul>
+
+                    </div>
+                </div><div class="box">
+                    <h2 class="boxhead">RSS</h2>
+                    <div class="boxbody">
+                        <ul>
+                            <li><a href="http://gentoolinux.hu/feed/" title="Olvasás RSS 2.0 hírcsatornán keresztül">Bejegyzések <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+                            <li><a href="http://gentoolinux.hu/comments/feed/" title="Bejegyzések legutóbbi hozzászólásai RSS-ben">Hozzászólások <acronym title="Really Simple Syndication">RSS</acronym></a></li>
+
+                        </ul>
+                    </div>
+                </div><div id="rss-5" class="box widget_rss"><h2 class="boxhead"><a class='rsswidget' href='http://planet.gentoo.org/rss20.xml' title='Olvasás RSS hírcsatornán keresztül'><img style='background:orange;color:white;border:none;' width='14' height='14' src='http://gentoolinux.hu/wp-includes/images/rss.png' alt='RSS' /></a> <a class='rsswidget' href='http://planet.gentoo.org/' title='Planet Gentoo - http://planet.gentoo.org/'>Planet Gentoo</a></h2><div class="boxbody"><ul><li><a class='rsswidget' href='http://blogs.gentoo.org/scarabeus/2010/11/08/xorg-server-1-9-stabilisation/#utm_source=feed&amp;utm_medium=feed&amp;utm_campaign=feed' title='The time has come. We plan to break your systems. And as usual we need your cooperation in this. :) As first I generated a nice list that contain all packages with the respective arches. Now there is required a bit of your interaction if you want to test this on your stable system, you need to convert this list onto package.keywords file: grep [myarch] x11_s [&hellip;]'>Tomáš Chvátal: xorg-server-1.9 stabilisation</a> <span class="rss-date">2010. november 8.  hétfő</span></li><li><a class='rsswidget' href='http://dev.c1pher.net/index.php/2010/11/truecrypt-again/' title='I will admit I didn’t realize there was as much use of TrueCrypt on Gentoo as I’ve come to find out there is.  This is good news in my opinion, and makes me feel a little bit better about sinking time into it. As long as people are making use of it, I don’t mind investing the effort =) I’m a big fan of keeping users in the loop so as I make progress with Tru [&hellip;]'>Dane Smith: TrueCrypt Again</a> <span class="rss-date">2010. november 8.  hétfő</span></li><li><a class='rsswidget' href='http://idl0r.qasl.de/blog/index.php/2010/11/07/migrating-from-gitosis-to-gitolite' title='So we finally migrated successfully from gitosis to gitolite. I&#039;ll try to explain how to do it easily. Client side, part 1: Update your local gitosis-admin repository Server side, part 1: Disable write access to your gitroot by either changing the &quot;git&quot; users homedir (I prefer this method) or by renaming the ~/.ssh/authorized_keys file. This i [&hellip;]'>Christian Ruppert: Migrating from gitosis to gitolite</a> <span class="rss-date">2010. november 7.  vasárnap</span></li><li><a class='rsswidget' href='http://blog.i-no.de//archives/2010/11/07/index.html#e2010-11-07T11_22_22.txt' title='As some of you have already heard, I&#039;ll be on the west coast of the US for three weeks, starting Monday (I&#039;ll arrive at 16:00 local time). The reason for my stay is work-related so it doesn&#039;t have to do with Gentoo. Still, I&#039;ll meet at least one fellow Gentoo dev (antarus). What&#039;s more, I won&#039;t be able to do much arch work while [&hellip;]'>Tobias Klausmann: Travel</a> <span class="rss-date">2010. november 7.  vasárnap</span></li><li><a class='rsswidget' href='http://rafaelmartins.eng.br/en-us/post/new-category-dev-lua/' title='Hi all, last friday I moved all the Lua-related packages already on the main tree to the just created dev-lua category. The package moves were smooth and the things should be ok now. I also added myself as co-maintainer of some of the packages and will fix/update them soon. I hope you all enjoy and contribute to the newest Gentoo package category. ;) [&hellip;]'>Rafael Goncalves Martins: New category: dev-lua</a> <span class="rss-date">2010. november 6.  szombat</span></li><li><a class='rsswidget' href='http://dev.c1pher.net/index.php/2010/11/truecrypt-and-gentoo/' title='TrueCrypt has actually absorbed a fair bit of my time as a crypto dev. It’s amazing the number of issues that existed, and still exist, with that particular package. Worse off, I have a fairly strong understanding of the issues that can arise from a package like TrueCrypt breaking. All of the data on that encrypted partition is inaccessible, and depending on [&hellip;]'>Dane Smith: TrueCrypt and Gentoo</a> <span class="rss-date">2010. november 6.  szombat</span></li><li><a class='rsswidget' href='http://blogs.gentoo.org/alexxy/2010/11/06/some-interesting-stats-about-gentoo-portage-tree/#utm_source=feed&amp;utm_medium=feed&amp;utm_campaign=feed' title='There is interesting question: How old are ebuilds in tree? (in term when they were touched last time) So using simple oneliner we can gather ebuilds by year # for i in `seq 2004 2010`; do echo -n &quot;${i} &quot;; qgrep -e &quot;\-${i} Gentoo&quot; | wc -l; done Since we currently has 4 active EAPI’s in tree another interesting question was: How EAPI’s are [&hellip;]'>Alexey Shvetsov: Some interesting stats about gentoo portage tree</a> <span class="rss-date">2010. november 6.  szombat</span></li><li><a class='rsswidget' href='http://blogs.gentoo.org/ali_bush/2010/11/06/hello-finally/#utm_source=feed&amp;utm_medium=feed&amp;utm_campaign=feed' title='Its been a while coming but i’ve been wanting to start blogging about what I do around gentoo for a while now.  Before we go into detail I’ll just start off with a nice short summary. Over 3 years ago I joined Gentoo as part of the java project and while I am still a part of it my interests are moving me more towards .NET.  Lately ive been doing a bit around [&hellip;]'>Alistair Bush: Hello finally.</a> <span class="rss-date">2010. november 6.  szombat</span></li><li><a class='rsswidget' href='http://blog.tampakrap.gr/gitolite-installation-with-gitweb-and-anongit-in-gentoo-and-debian/#utm_source=feed&amp;utm_medium=feed&amp;utm_campaign=feed' title='Introduction My second howto article is again about a Version Control System, but this time for Git. My previous article about setting up SVN (and expanding it with a Gorg installation for easier management of Gentoo translations) was describing a way to have virtual SVN users without giving them shell access to the box. In this article I’m going to describe [&hellip;]'>Theo Chatzimichos: Gitolite installation with gitweb and anongit in Gentoo and Debian</a> <span class="rss-date">2010. november 5.  péntek</span></li><li><a class='rsswidget' href='http://www.steev.net/?p=281' title='Got a bit of a late start today, but it was pretty productive. We worked in the merge branch, trying to squash the video bug once and for all. We almost have it. Going to try a few more things tonight and then full steam tomorrow before I leave. Speaking of which, I&#039;m kind of torn about tomorrow. On the one hand, there are my friends in Tulsa, that I mi [&hellip;]'>Steev Klimaszewski: Day Six</a> <span class="rss-date">2010. november 5.  péntek</span></li></ul></div></div></div>
+
+            <!-- End Right Column -->            <br style="clear:both;" />
+            <!-- Begin Footer -->
+            <div id="footer">
+ 			   A site alatt a <a href="http://wordpress.org/" title="Wordpress">Wordpress 3</a> motor dohog. | &copy; 2010 Gabor Garami
+            </div>
+            <!-- End Footer -->
+
+        </div>
+        <!-- End Wrapper -->
+
+    </body>
+</html>
