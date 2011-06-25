@@ -1,0 +1,15 @@
+name = Gentoo
+description = Gentoo.org based
+version = 7.x-1.0
+core = 7.x
+engine = phptemplate
+stylesheets[all][] = style.css
+stylesheets[print][] = print.css
+
+scripts[] = application.js
+
+regions[sidebar_first] = Left sidebar
+regions[sidebar_second] = Right sidebar
+regions[content] = Content
+regions[header] = Header
+regions[footer] = Footer

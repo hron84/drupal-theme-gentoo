@@ -1,0 +1,841 @@
+/*
+Theme Name: Gentoo Linux Magyarország
+Theme URI: http://gentoolinux.hu/
+Description: Theme inspired by gentoo.org
+Version: 1.0
+Author: Gabor Garami
+Tags: fixed width, three columns, widgets
+
+Base design by Keith Donegan || http://www.code-sucks.com
+Calendar icons by Sotak || http://sotak.co.uk
+Navigation bar by Fat Erik ||
+
+*/
+
+* { padding: 0; margin: 0; }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    background: #dddaec;
+}
+
+h1, h2, h3, h4 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+a,
+a:link
+a:visited {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+input[type="submit"],
+input[type="submit"] {
+    border: none;
+    background: #7a5ada;
+    color: white;
+    padding: 2px;
+}
+
+p.submit,
+p.submit {
+    text-align: right;
+    padding-top: 5px;
+}
+
+legend {
+    padding: 5px;
+}
+
+#wrapper {
+    margin: 0 auto;
+    width: 1100px;
+    background-color: #bab5cc;/*#dddaec;*/
+
+}
+#header {
+    color: #fff;
+    width: 1080px;
+    float: left;
+    padding: 10px;
+    /* border: 1px solid #ccc;*/
+    text-align: center;
+    margin: 0;
+    background-color: #000;
+    height: 66px;
+}
+
+#header img {
+    /*border: none;*/
+    border: 1px solid #ff0000;
+    float: left;
+}
+
+#header a {
+    color: #fff;
+}
+
+#leftcolumn {
+    color: #333;
+    /* border: 1px solid #ccc;*/
+    /* background: #E7DBD5;*/
+    margin: 0px 0px 0px 0px;
+    padding: 10px;
+    /* height: 350px;*/
+    width: 200px;
+    float: left;
+}
+#content {
+    float: left;
+    color: #333;
+    background: #fff;
+    margin: 0;
+    padding-top: 0;
+    /* height: 350px;*/
+    width: 650px;
+}
+
+#navmenu {
+    padding: 5px;
+    margin: 0 0 5px 0;
+    background: #000;
+    color: #fff;
+    font-weight: bold;
+    font-size: 9pt;
+    text-align: center;
+}
+
+#navmenu ul {
+    list-style: none;
+
+}
+
+#navmenu li {
+    display: inline;
+    /*padding: 5px;*/
+    margin: 0;
+}
+
+#navmenu ul li:before { content: "| "; }
+#navmenu ul li:first-child:before { content: ""; }
+
+
+/*IE workaround*/
+/*All IE browsers*/
+* html #navmenu li
+{
+    border-left: 1px solid #fff;
+    padding: 0 0.4em 0 0.4em;
+    margin: 0 0.4em 0 -0.4em;
+}
+
+/*Win IE browsers - hide from Mac IE\*/
+* html #navmenu { height: 1%; }
+
+* html #navmenu li
+{
+    display: block;
+    float: left;
+}
+
+/*End hide*/
+/*Mac IE 5*/
+* html #navlist li:first-child { border-left: 0; }
+
+
+#navmenu a,
+#navmenu a:link,
+#navmenu a:visited
+{
+    padding: 5px;
+    margin: 0;
+    /* background: #7a5ada;*/
+    color: #bab5cc;
+    text-decoration: none;
+}
+
+#navmenu a:hover {
+    text-decoration: underline;
+}
+
+.node,
+.comment {
+    padding: 5px;
+}
+
+.nodehead, .commenthead {
+    border: 1px dashed black;
+    background-color: #7a5ada;
+    color: #fff;
+}
+
+.comment {
+    margin-top: 10px;
+}
+
+.node p,
+.comment p {
+    padding: 5px 10px;
+}
+
+.nodehead {
+    background: #7a5ada;
+    color: #fff;
+    text-align: center;
+    height: 42px;
+    margin-bottom: 10px;
+}
+
+.autoheight {
+    height: auto;
+}
+
+.autoheight h2 {
+    padding: 10px;
+}
+
+.nodehead a,
+.nodehead a:link,
+.nodehead a:visited,
+.nodehead h2 a,
+.nodehead h2 a:link,
+.nodehead h2 a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nodehead a:hover,
+.nodehead h2 a:hover {
+    text-decoration: underline;
+}
+
+.nodehead h2 {
+    font-size: 11pt;
+    padding: 5px;
+
+}
+
+.nodehead p {
+    padding: 0;
+    font-size: 8pt;
+}
+
+.nodebody table {
+    border-collapse: collapse;
+    border: 1px solid #000;
+    width: 95%;
+    margin: 10px 15px;
+}
+.nodebody th {
+    background: #7a5ada;
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid #000;
+    text-align: center;
+    padding: 3px;
+}
+
+.nodebody th a.active {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nodebody td {
+    padding: 5px;
+    border: 1px solid #000;
+}
+
+.nodebody td.num {
+    text-align: center;
+}
+
+.nodebody a,
+.nodebody a:link,
+.nodebody a:visited,
+.commentbody a,
+.commentbody a:link,
+.commentbody a:visited {
+    text-decoration: none;
+    color: #7a5ada;
+    border-bottom: 1px dotted #333;
+}
+
+.nodebody a:hover,
+.commentbody a:hover {
+    color: #7a5ada;
+    border: none;
+    text-decoration: underline;
+}
+
+.nodebody td.sticky a {
+    font-weight: bolder;
+}
+
+.nodebody ul,
+.nodebody ol {
+    margin-left: 30px;
+}
+.nodebody li {
+    padding: 5px 0;
+}
+
+.nodebody tr.form-field th,
+.nodebody tr.pass-strength th,
+.nodebody tr.extra-caps-row th,
+.nodebody tr.form-field td,
+.nodebody tr.pass-strength td,
+.nodebody tr.extra-caps-row td {
+    background: #fff;
+    color: #000;
+    border: none;
+}
+
+.nodebody table#userinfo,
+.nodebody table#admininfo,
+.nodebody table#searchinfo,
+.nodebody fieldset#password-edit table {
+    border: none;
+}
+
+.nodebody fieldset {
+    border: none;
+    border-top: 1px solid #000;
+    padding: 10px 5px;
+}
+
+.nodebody label {
+    font-weight: bold;
+}
+/* edit-form */
+.nodebody input[type="text"],
+.nodebody input[type="password"],
+.nodebody textarea {
+    border: 1px solid #000;
+    padding: 2px;
+}
+
+.nodebody textarea {
+    width: 95%;
+}
+.nodebody blockquote,
+.commentbody blockquote {
+
+    color: #100;
+    background-color: #f9f9f9;
+    border: 1px solid silver;
+    padding: 5px 10px;
+    margin: 0 0 1.5em 10px;
+    overflow: auto;
+    width: 95%;
+}
+
+.nodebody .edit-form fieldset,
+.nodebody .post-form fieldset,
+.nodebody .search-form fieldset {
+    border: none;
+}
+
+.nodebody .userinfo dl {
+    width: 530px;
+    margin: 2em 0;
+    padding: 0;
+    font-family: georgia, times, serif;
+}
+
+.nodebody .userinfo dt {
+    width: 170px;
+    float: left;
+    margin: 0 0 0 0;
+    padding: 10px;
+    border-top: 1px solid #999;
+    font-weight: bold;
+}
+
+/* commented backslash hack for mac-ie5 \*/
+.nodebody .userinfo dt { clear: both; }
+/* end hack */
+
+.nodebody .userinfo dd {
+    float: left;
+    width: 300px;
+    margin: 0 0 0 0;
+    padding: 10px;
+    border-top: 1px solid #999;
+}
+
+table#forumlist tr.category td {
+    font-weight: bold;
+    background: #a39dbb;
+}
+
+table#forumlist tr.category td a,
+table#forumlist tr.category td a:link,
+table#forumlist tr.category td a:visited {
+    color: #fff;
+}
+
+p.date {
+    width: 42px;
+    height: 10px;
+    padding: 18px 0 14px 0;
+    /*margin-top: 20px;*/
+    text-align: center;
+    color: #000;
+    float: left;
+}
+
+p.date span { display: none; }
+
+.month1  { background: url(images/month/01.gif) no-repeat 0 0; }
+.month2  { background: url(images/month/02.gif) no-repeat 0 0; }
+.month3  { background: url(images/month/03.gif) no-repeat 0 0; }
+.month4  { background: url(images/month/04.gif) no-repeat 0 0; }
+.month5  { background: url(images/month/05.gif) no-repeat 0 0; }
+.month6  { background: url(images/month/06.gif) no-repeat 0 0; }
+.month7  { background: url(images/month/07.gif) no-repeat 0 0; }
+.month8  { background: url(images/month/08.gif) no-repeat 0 0; }
+.month9  { background: url(images/month/09.gif) no-repeat 0 0; }
+.month10 { background: url(images/month/10.gif) no-repeat 0 0; }
+.month11 { background: url(images/month/11.gif) no-repeat 0 0; }
+.month12 { background: url(images/month/12.gif) no-repeat 0 0; }
+
+.nodefoot, .commentfoot {
+    border-top: 1px dashed #000;
+    margin-top: 10px;
+}
+
+.nodefoot {
+    width: 95%;
+    margin-left: 15px;
+}
+
+.nodefoot .p {
+    font-size: 9pt;
+    font-weight: bold;
+    /* padding: 5px;*/
+}
+
+.nodefoot p a,
+.nodefoot p a:link,
+.nodefoot p a:visited,
+.nodefoot .p a,
+.nodefoot .p a:link,
+.nodefoot .p a:visited,
+.commentfoot p a,
+.commentfoot p a:link,
+.commentfoot p a:visited {
+    font-weight: normal;
+}
+
+
+.nodefoot ul.tags-list{
+    list-style: none;
+    display: inline;
+}
+
+.nodefoot ul.tags-list li {
+    display: inline;
+    padding: 5px;
+    margin: 0;
+}
+
+.nodefoot .form-inline {
+    float: right;
+}
+.nodefoot form#tag-form input[type="text"] {
+    width: 100px;
+    border: 1px solid #000;
+}
+
+.nav {
+    text-align: center;
+}
+
+.nav a:visited {
+    color: #999;
+}
+
+.comment {
+    padding: 5px;
+    color: #000;
+}
+.commenthead {
+    padding-left: 2px;
+
+    margin-bottom: 5px;
+    /*	height: 24px; */
+    font-weight: bolder;
+    /*overflow: auto;*/
+}
+
+.commenthead .picture img {
+    border: 1px solid #fff;
+    float: left;
+    margin: 2px 5px;
+/*    width: 24px;
+    height: 24px;*/
+}
+
+
+.commenthead .commentuser {
+    text-align: left;
+    float: left;
+    margin-top: 5px;
+}
+
+.commenthead .commentuser a,
+.commenthead .commentuser a:link,
+.commenthead .commentuser a:visited
+{
+    color: #fff;
+}
+
+
+.commenthead .commentdate {
+    text-align: right;
+    float: right;
+    margin-top: 5px;
+}
+
+.commentfoot {
+    border-top: 1px solid #000;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+
+
+#rightcolumn {
+    color: #333;
+    margin: 0px 0px 0px 0px;
+    padding: 10px;
+    width: 200px;
+    float: left;
+}
+
+.sidebar .box {
+    border: 1px solid #000;
+    width: 195px;
+    padding: 0;
+    margin-bottom: 10px;
+    font-size: 8pt;
+}
+
+.sidebar .box h2.boxhead {
+    border-bottom: 1px solid #000;
+    display: block;
+    background-color: #7a5ada;
+    color: #fff;
+    text-align: center;
+    padding: 3px;
+    font-size: 9pt;
+}
+
+.sidebar .box h2.boxhead a {
+    color: #fff;
+}
+
+.sidebar .boxbody {
+    padding: 5px 10px;
+    background: #dddaec;
+    color: #000;
+}
+
+.boxbody ul {
+    list-style: none;
+    text-align: left;
+}
+.boxbody li.leaf {
+    list-style: none;
+}
+.boxbody li {
+    padding: 2px 0;
+}
+
+.boxbody li a,
+.boxbody li a:link,
+.boxbody li a:visited {
+
+    text-decoration: none;
+    color: #333;
+}
+
+form.login-form input[type="text"],
+form.login-form input[type="password"],
+form.register-form input[type="text"],
+form.register-form input[type="password"] {
+    border: 1px solid #000;
+    width: 120px;
+}
+
+form.register-form input.fail {
+    background: #FF9999;
+}
+
+#footer {
+    /*width: 900px;*/
+    /*clear: both;*/
+    color: #fff;
+    border: 0px solid #ccc;
+    background-color: #7a5ada;
+    margin: 0;
+    padding: 5px;
+    font-size: 0.8em;
+    text-align: right;
+    font-weight: bold;
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+
+#footer a,
+#footer a:link,
+#footer a:visited {
+    color: #00ff00;
+}
+
+.clear {
+    clear: both;
+    margin-top: -1px;
+    height: 1px;
+    overflow: hidden;
+    display: block;
+}
+
+
+#commentform {
+    padding: 5px 10px;
+}
+
+#commentform textarea,
+#commentform input.textbox {
+    border: 1px solid #000;
+}
+#commentform textarea {
+    width: 100%;
+}
+/*
+#commentform #submit {
+    color: white;
+    border: 1px solid #000;
+    background-color: #7a5ada;
+
+    padding: 2px 3px;
+}
+*/
+
+div.nest {
+    padding-left: 20px;
+}
+
+#forumlist a,
+#forumlist a:link,
+#forumlist a:visited,
+#latest a,
+#latest a:link,
+#latest a:visited {
+    color: #333;
+}
+
+/* Plugin hacks */
+div.yarr {
+    text-align: right;
+}
+
+.commentbody code,
+.nodebody code {
+    color: #100;
+    background-color: #f9f9f9;
+    font-size: 12px;
+    border: 1px solid silver;
+    overflow: auto;
+    margin: 2px 0 16px 2px;
+    width: auto;
+}
+
+.nodebody #first-time {
+    float: none;
+    border: none;
+}
+#first-time p {
+    border-bottom: 1px dashed #000;
+}
+
+#post-form-allowed-container code {
+    display: inline;
+    border: none;
+    padding: auto;
+    margin: auto;
+    width: auto;
+}
+
+ul.tips li {
+    line-height: 20px;
+}
+
+/* Drupal modding */
+
+#user-login-form ul {
+    margin-top: 0.75em;
+}
+
+.item-list ul li,
+li.leaf {
+    list-style: none;
+}
+
+li.openid-link {
+    width: 200px;
+    line-height: 24px;
+    height: 24px;
+}
+
+li.openid-link a {
+    line-height: 24px;
+    display: block;
+    padding-bottom: 5px;
+}
+
+.item-list ul li {
+    margin: 0;
+}
+
+.form-item .description {
+    margin-top: 5px;
+}
+
+.form-item label {
+    padding-bottom: 3px;
+    margin-bottom: 3px;
+}
+
+ul.menu li ul {
+    margin-left: 10px;
+}
+
+#content .messages {
+    text-align: center;
+    margin: 2px 5px;
+    padding: 10px;
+    border: 1px dashed #000;
+}
+
+#content .message h2 {
+    padding-top
+}
+
+#content .messages.status {
+    background-color: #56e94f;
+}
+
+#content .messages.warning {
+    background-color: #fff580;
+}
+
+#content .messages.error {
+    background-color: #f9546b;
+}
+
+#comments {
+    margin-top: 5px;
+}
+#comments h2.comments {
+    font-size: 12pt;
+    padding-left: 5px;
+}
+.nodefoot ul.links {
+    margin-left: 2px;
+}
+
+.sidebar #icons {
+    text-align: right;
+    margin-right: 5px;
+}
+
+.comment .sign {
+    border-top: 1px dotted #000;
+    margin: 2px 10px;
+}
+
+.nodebody #tracker table {
+    margin-left: 0;
+}
+
+.node-form {
+    padding: 5px;   
+}
+
+#content .node-type-list {
+    padding: 5px;
+}
+
+#first-time {
+    float: left;
+    color: #333;
+    background: #fff;
+    margin: 0 10px 10px 10px;
+    border: 1px solid red;
+}
+
+#first-time ol li {
+    margin-left: 20px;
+}
+
+.nodefoot .terms ul {
+    display: inline;
+}
+.commenthead img {
+    width: 24px;
+    height: 24px;
+}
+
+#content .box,
+.node-form {
+    display: block;
+    border: none;
+    margin: 10px;
+}
+.node-form {
+    padding-left: 10px;
+}
+#content .nodebody table.system-status-report th a {
+    color: #fff;
+}
+ul.tips {
+    margin-left: 10px;
+}
+
+#forum tr td.forum {
+    padding: 0;
+    margin: 0;
+    background-image: none;
+}
+
+#forum tr td.forum a {
+    background-image: url('/misc/forum-default.png');
+    background-repeat: no-repeat;
+    padding-left: 22px;
+}
+
+#forum tr td.container {
+    background: #BAB5CC;
+}
+
+#forum tr td.container a {
+    font-weight: bold;
+    color: #000;
+}
+
+.node.sticky  {
+    border: 5px double #9c8dc9; 
+    margin: 2px;
+}
+
+/*
+vim: ts=4 sw=4 et
+*/
