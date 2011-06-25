@@ -1,0 +1,32 @@
+Gentoo theme
+============
+
+This [Drupal](http://drupal.org) theme created for the [Hungarian Gentoo Linux portal](http://gentoolinux.hu/), 
+inspired by [Gentoo.org](http://gentoo.org). Many thanks for [Sotak](http://sotak.co.uk/)
+for his awesome calendar icons.
+
+License
+-------
+
+This theme is published under the terms of CreativeCommons BY-NC-SA license. Please
+read COPYRIGHT.txt for more information.
+
+Compatibility
+-------------
+
+This repository has two separated branch, one for Drupal 6.x and one for Drupal 7.x.
+Please be careful, because these two branch are not cross-compatible. So, with simple
+words: you cannot use drupal-7.x branch with Drupal 6.x, and same for drupal-7.x branch
+
+Development
+-----------
+
+This theme is under active development, but only the drupal-7.x branch. The drupal-6.x branch
+is exists just for historical reasons. If you find a bug in drupal-6.x, you can tell me, but
+I cannot guarantee I will fix it.
+
+
+Summary
+-------
+
+Any comments and patches are welcome! :-)
