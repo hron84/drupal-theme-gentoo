@@ -2,7 +2,6 @@
 ?>
 <div id="node-<?php print $node->nid; ?>"  class="<?php print $classes; ?>"<?php print $attributes; ?>>
   <!-- picture -->
-  <?php print $user_picture; ?>
   <div class="nodehead autoheight">
     <script type="text/javascript"><?php
       $d  = getdate($node->created);
