@@ -54,8 +54,12 @@ function gentoo_preprocess_block(&$vars) {
     if($block->module == 'system' && $block->delta == 'user-menu') {
         global $user;
         $userdata = user_load($user->uid);
-        if(array_key_exists('field_name', $userdata)) {
-            $block->subject = $userdata->field_name['und'][0]['safe_value'];
+        if(isset($userdata->profile_full_name)) {
+            $block->subject = $userdata->profile_full_name;
+        /* } else if(isset($userdata->field_name)) {
+            $block->subject = $userdata->field_name['und'][0]['safe_value'];*/
+        } else {
+            $block->subject = $user->name;
         }
     }
 }
